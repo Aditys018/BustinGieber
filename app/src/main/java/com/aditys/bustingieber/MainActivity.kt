@@ -1,5 +1,6 @@
 package com.aditys.bustingieber
 
+
 import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -34,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
         // Instantiate the RequestQueue.
         val queue = Volley.newRequestQueue(this)
-        val url = "https://api.memegenerator.net/v1/generators/search?q="
+        val url = "https://meme-api.herokuapp.com/gimme"
 
         // Request a JSON object response from the provided URL.
         val jsonObjectRequest = JsonObjectRequest(
